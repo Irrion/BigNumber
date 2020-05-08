@@ -1395,7 +1395,7 @@ public:
 							{
 								break;
 							}
-							else
+							else if (num_2[i] > num_1[i])
 							{
 								while (razn.size() != num_2.size())
 								{
@@ -2333,7 +2333,7 @@ public:
 									del1[0] = del[c];
 									del2[0] = num_2[c];
 								}
-								else
+								else if(del[c] < num_2[c])
 								{
 									if (i != num_1.size() - 1)
 									{
@@ -2605,7 +2605,7 @@ public:
 		
 	}
 
-	void time_test(BigNum a, BigNum b) 
+	/*void time_test(BigNum a, BigNum b) 
 	{
 		clock_t time_start;
 		clock_t time_end;
@@ -2634,7 +2634,7 @@ public:
 		t = (double)(time_end - time_start) / CLOCKS_PER_SEC;
 		cout << "time Del : " << t << endl;
 		
-	}
+	}*/
 	
 	
 };
@@ -2649,7 +2649,7 @@ int main()
 		cout << "Enter numbers:" << endl;
 		cin >> a;
 		cin >> b;
-		a.time_test(a, b);
+		/*a.time_test(a, b);*/
 		cout << endl;
 		cout << "Sum:" << " " << a + b << endl;
 		cout << "Razn:" << " " << a - b << endl;
