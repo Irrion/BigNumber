@@ -2579,7 +2579,7 @@ public:
 						z.numb.push_back(el[0]);
 						return z;
 					}
-					else
+					else if(num_1[i] < num_2[i])
 					{
 						if (z.numb[0] == '-')
 						{
@@ -2605,7 +2605,7 @@ public:
 		
 	}
 
-	/*void time_test(BigNum a, BigNum b) 
+	void time_test(BigNum a, BigNum b) 
 	{
 		clock_t time_start;
 		clock_t time_end;
@@ -2634,7 +2634,7 @@ public:
 		t = (double)(time_end - time_start) / CLOCKS_PER_SEC;
 		cout << "time Del : " << t << endl;
 		
-	}*/
+	}
 	
 	
 };
@@ -2649,7 +2649,7 @@ int main()
 		cout << "Enter numbers:" << endl;
 		cin >> a;
 		cin >> b;
-		/*a.time_test(a, b);*/
+		a.time_test(a, b);
 		cout << endl;
 		cout << "Sum:" << " " << a + b << endl;
 		cout << "Razn:" << " " << a - b << endl;
