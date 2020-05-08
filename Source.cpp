@@ -1379,6 +1379,75 @@ public:
 			}
 			if (num_1.size() >= num_2.size())
 			{
+				if (num_1.size() == num_2.size())
+				{
+					bool chek = num_1 == num_2;
+					if (chek == 1)
+					{
+						z.numb = '0';
+						return z;
+					}
+					else if (chek == 0)
+					{
+						for (int i = 0; i < num_1.size(); i++)
+						{
+							if (num_1[i] > num_2[i])
+							{
+								break;
+							}
+							else
+							{
+								while (razn.size() != num_2.size())
+								{
+									razn.push_back(0);
+								}
+								for (int i = num_2.size() - 1; i >= 0; i--)
+								{
+									string elem;
+									vector<int>keepone;
+									if (num_2[i] >= num_1[i])
+									{
+										razn[i] = num_2[i] - num_1[i];
+									}
+									else if (num_2[i] < num_1[i])
+									{
+										num_2[i] = num_2[i] + 10;
+										i--;
+										while (num_2[i] == 0)
+										{
+											num_2[i] = num_2[i] + 9;
+											i--;
+										}
+										num_2[i] = num_2[i] - 1;
+										i++;
+										while (num_2[i] == 9)
+										{
+											i++;
+										}
+										razn[i] = num_2[i] - num_1[i];
+
+									}
+								}
+								rez.push_back('-');
+								if (razn[0] == 0)
+								{
+									vector<int>::iterator Era = razn.begin();
+									razn.erase(Era);
+								}
+								for (int i = 0; i < razn.size(); i++)
+								{
+									el = to_string(razn[i]);
+									for (int j = 0; j < el.size(); j++)
+									{
+										rez.push_back(el[j]);
+									}
+								}
+								z.numb = rez;
+								return z;
+							}
+						}
+					}
+				}
 				while (razn.size() != num_1.size())
 				{
 					razn.push_back(0);
@@ -1436,6 +1505,7 @@ public:
 				z.numb = rez;
 				return z;
 			}
+			
 			else if (num_2.size() > num_1.size())
 			{
 				while (razn.size() != num_2.size())
@@ -2565,7 +2635,8 @@ public:
 		cout << "time Del : " << t << endl;
 		
 	}
-
+	
+	
 };
 
 int main()
@@ -2584,6 +2655,7 @@ int main()
 		cout << "Razn:" << " " << a - b << endl;
 		cout << "Umn:" << " " << a * b << endl;
 		cout << "Del:" << " " << a / b << endl;
+		
 		cout << endl;
 	}
 	system("pause");
