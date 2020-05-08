@@ -53,6 +53,11 @@ public:
 					cout << "The number entered is incorrect" << endl;
 					return z;
 				}
+				else if (a[0] == '-'&&a[1] == '0')
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
 				else if (i != 0 && a[i] == '-')
 				{
 					cout << "The number entered is incorrect" << endl;
@@ -71,6 +76,11 @@ public:
 				b[i] == '7' || b[i] == '8' || b[i] == '9')
 			{
 				if (b[0] == '0' && b.size() != 1)
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+				else if (b[0] == '-'&& b[1] == '0')
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
@@ -868,6 +878,11 @@ public:
 					cout << "The number entered is incorrect" << endl;
 					return z;
 				}
+				else if (a[0] == '-'&&a[1] == '0')
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
 				else if (i != 0 && a[i] == '-')
 				{
 					cout << "The number entered is incorrect" << endl;
@@ -886,6 +901,11 @@ public:
 				b[i] == '7' || b[i] == '8' || b[i] == '9')
 			{
 				if (b[0] == '0' && b.size() != 1)
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+				else if (b[0] == '-'&& b[1] == '0')
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
@@ -1589,6 +1609,11 @@ public:
 					cout << "The number entered is incorrect" << endl;
 					return z;
 				}
+				else if (a[0] == '-'&&a[1] == '0')
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
 				else if (i != 0 && a[i] == '-')
 				{
 					cout << "The number entered is incorrect" << endl;
@@ -1607,6 +1632,11 @@ public:
 				b[i] == '7' || b[i] == '8' || b[i] == '9')
 			{
 				if (b[0] == '0' && b.size() != 1)
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+				else if (b[0] == '-'&& b[1] == '0')
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
@@ -2189,6 +2219,11 @@ public:
 					cout << "The number entered is incorrect" << endl;
 					return z;
 				}
+				else if (a[0] == '-'&&a[1] == '0')
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
 				else if (i != 0 && a[i] == '-')
 				{
 					cout << "The number entered is incorrect" << endl;
@@ -2207,6 +2242,11 @@ public:
 				b[i] == '7' || b[i] == '8' || b[i] == '9')
 			{
 				if (b[0] == '0' && b.size() != 1)
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+				else if (b[0] == '-'&& b[1] == '0')
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
