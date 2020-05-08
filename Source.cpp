@@ -48,12 +48,34 @@ public:
 			if (a[i] == '-' || a[i] == '0' || a[i] == '1' || a[i] == '2' || a[i] == '3' || a[i] == '4' || a[i] == '5' || a[i] == '6' ||
 				a[i] == '7' || a[i] == '8' || a[i] == '9')
 			{
-				if (a[0] == '0')
+				if (a[0] == '0'&&a.size() != 1)
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
 				}
 				else if (i != 0 && a[i] == '-')
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+			}
+			else
+			{
+				cout << "The number entered is incorrect" << endl;
+				return z;
+			}
+		}
+		for (int i = 0; i < b.size(); i++)
+		{
+			if (b[i] == '-' || b[i] == '0' || b[i] == '1' || b[i] == '2' || b[i] == '3' || b[i] == '4' || b[i] == '5' || b[i] == '6' ||
+				b[i] == '7' || b[i] == '8' || b[i] == '9')
+			{
+				if (b[0] == '0' && b.size() != 1)
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+				else if (i != 0 && b[i] == '-')
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
@@ -841,12 +863,34 @@ public:
 			if (a[i] == '-' || a[i] == '0' || a[i] == '1' || a[i] == '2' || a[i] == '3' || a[i] == '4' || a[i] == '5' || a[i] == '6' ||
 				a[i] == '7' || a[i] == '8' || a[i] == '9')
 			{
-				if (a[0] == '0')
+				if (a[0] == '0'&&a.size() != 1)
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
 				}
 				else if (i != 0 && a[i] == '-')
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+			}
+			else
+			{
+				cout << "The number entered is incorrect" << endl;
+				return z;
+			}
+		}
+		for (int i = 0; i < b.size(); i++)
+		{
+			if (b[i] == '-' || b[i] == '0' || b[i] == '1' || b[i] == '2' || b[i] == '3' || b[i] == '4' || b[i] == '5' || b[i] == '6' ||
+				b[i] == '7' || b[i] == '8' || b[i] == '9')
+			{
+				if (b[0] == '0' && b.size() != 1)
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+				else if (i != 0 && b[i] == '-')
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
@@ -1470,12 +1514,34 @@ public:
 			if (a[i] == '-' || a[i] == '0' || a[i] == '1' || a[i] == '2' || a[i] == '3' || a[i] == '4' || a[i] == '5' || a[i] == '6' ||
 				a[i] == '7' || a[i] == '8' || a[i] == '9')
 			{
-				if (a[0] == '0')
+				if (a[0] == '0'&&a.size() != 1)
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
 				}
 				else if (i != 0 && a[i] == '-')
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+			}
+			else
+			{
+				cout << "The number entered is incorrect" << endl;
+				return z;
+			}
+		}
+		for (int i = 0; i < b.size(); i++)
+		{
+			if (b[i] == '-' || b[i] == '0' || b[i] == '1' || b[i] == '2' || b[i] == '3' || b[i] == '4' || b[i] == '5' || b[i] == '6' ||
+				b[i] == '7' || b[i] == '8' || b[i] == '9')
+			{
+				if (b[0] == '0' && b.size() != 1)
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+				else if (i != 0 && b[i] == '-')
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
@@ -2048,12 +2114,34 @@ public:
 			if (a[i] == '-' || a[i] == '0' || a[i] == '1' || a[i] == '2' || a[i] == '3' || a[i] == '4' || a[i] == '5' || a[i] == '6' ||
 				a[i] == '7' || a[i] == '8' || a[i] == '9')
 			{
-				if (a[0] == '0')
+				if (a[0] == '0'&&a.size() != 1)
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
 				}
 				else if (i != 0 && a[i] == '-')
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+			}
+			else
+			{
+				cout << "The number entered is incorrect" << endl;
+				return z;
+			}
+		}
+		for (int i = 0; i < b.size(); i++)
+		{
+			if (b[i] == '-' || b[i] == '0' || b[i] == '1' || b[i] == '2' || b[i] == '3' || b[i] == '4' || b[i] == '5' || b[i] == '6' ||
+				b[i] == '7' || b[i] == '8' || b[i] == '9')
+			{
+				if (b[0] == '0' && b.size() != 1)
+				{
+					cout << "The number entered is incorrect" << endl;
+					return z;
+				}
+				else if (i != 0 && b[i] == '-')
 				{
 					cout << "The number entered is incorrect" << endl;
 					return z;
@@ -2092,7 +2180,7 @@ public:
 		{
 			num_2.push_back(atoi(b.substr(j, 1).c_str()));
 		}
-		if (num_1[num_1.size() - 1] == 0 && num_2[num_2.size() - 1] == 0)
+		if (num_1[num_1.size() - 1] == 0 && num_2[num_2.size() - 1] == 0 && num_1.size() != 1 && num_2.size() != 1)
 		{
 			while (num_1[num_1.size() - 1] == 0 && num_2[num_2.size() - 1] == 0)
 			{
@@ -2102,6 +2190,15 @@ public:
 		}
 		if (num_1.size() > num_2.size())
 		{
+			if (num_2[0] == 0)
+			{
+				if (z.numb[0] == '-')
+				{
+					z.numb.pop_back();
+				}
+				z.numb.push_back('0');
+				return z;
+			}
 			for (int i = 0; i < num_1.size(); )
 			{
 				int mul = 0;
@@ -2110,6 +2207,20 @@ public:
 					if (del.size() <= num_2.size())
 					{
 						del.push_back(num_1[i]);
+						if (del[0] == 0)
+						{
+							z.numb.push_back('0');
+							del.pop_back();
+							if (i != num_1.size() - 1)
+							{
+								i++;
+								continue;
+							}
+							else
+							{
+								return z;
+							}
+						}
 						if (del.size() < num_2.size())
 						{
 							if (i == num_1.size() - 1)
@@ -2159,6 +2270,7 @@ public:
 										if (counter > 1)
 										{
 											z.numb.push_back('0');
+
 										}
 										i++;
 										del.push_back(num_1[i]);
@@ -2276,6 +2388,7 @@ public:
 				else
 				{
 					coun++;
+				
 					if (coun > 1)
 					{
 						if (i != num_1.size())
@@ -2304,10 +2417,19 @@ public:
 		}
 		else if (num_1.size() == num_2.size())
 		{
+			if (num_1[0] == 0 || num_2[0] == 0)
+			{
+				if (z.numb[0] == '-')
+				{
+					z.numb.pop_back();
+				}
+				z.numb = '0';
+				return z;
+			}
 			bool chek = num_1 == num_2;
 			if (chek == 1)
 			{
-				z.numb = '1';
+				z.numb.push_back('1');
 				return z;
 			}
 			for (int i = 0; i < num_1.size(); i++)
@@ -2320,11 +2442,11 @@ public:
 						while (true)
 						{
 							mul++;
-							for (int j = del.size() - 1; j >= 0; j--)
+							for (int j = num_1.size() - 1; j >= 0; j--)
 							{
 								string elem;
 								vector<int>keepone;
-								if (del[j] >= num_2[j])
+								if (num_1[j] >= num_2[j])
 								{
 									num_1[j] = num_1[j] - num_2[j];
 								}
@@ -2415,30 +2537,31 @@ public:
 
 	void time_test(BigNum a, BigNum b) 
 	{
-		clock_t time;
-		float t;
-		time = clock();
+		clock_t time_start;
+		clock_t time_end;
+		double t;
+		time_start = clock();
 		a + b;
-		time = clock() - time;
-		t = static_cast<float>(time) / CLOCKS_PER_SEC;
+		time_end = clock();
+		t = (double)(time_end - time_start) / CLOCKS_PER_SEC;
 		cout << "time sum : " << t << endl;
 		
-		time = clock();
+		time_start = clock();
 		a - b;
-		time = clock() - time;
-		t = static_cast<float>(time) / CLOCKS_PER_SEC;
+		time_end = clock();
+		t = (double)(time_end - time_start) / CLOCKS_PER_SEC;
 		cout << "time Razn : " << t << endl;
 		
-		time = clock();
+		time_start = clock();
 		a * b;
-		time = clock() - time;
-		t = static_cast<float>(time) / CLOCKS_PER_SEC;
+		time_end = clock();
+		t = (double)(time_end - time_start) / CLOCKS_PER_SEC;
 		cout << "time Umn : " << t << endl;
 		
-		time = clock();
+		time_start = clock();
 		a / b;
-		time = clock() - time;
-		t = static_cast<float>(time) / CLOCKS_PER_SEC;
+		time_end = clock();
+		t = (double)(time_end - time_start) / CLOCKS_PER_SEC;
 		cout << "time Del : " << t << endl;
 		
 	}
