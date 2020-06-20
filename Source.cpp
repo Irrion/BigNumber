@@ -2306,7 +2306,7 @@ public:
 				{
 					z.numb.pop_back();
 				}
-				z.numb.push_back('0');
+				cout << "You can't divide by zero" << endl;
 				return z;
 			}
 			for (int i = 0; i < num_1.size(); )
@@ -2529,12 +2529,26 @@ public:
 		{
 			if (num_1[0] == 0 || num_2[0] == 0)
 			{
-				if (z.numb[0] == '-')
+				if (num_2[0] != 0)
 				{
-					z.numb.pop_back();
+					if (z.numb[0] == '-')
+					{
+						z.numb.pop_back();
+					}
+
+					z.numb = '0';
+					return z;
 				}
-				z.numb = '0';
-				return z;
+				else
+				{
+					if (z.numb[0] == '-')
+					{
+						z.numb.pop_back();
+					}
+					cout << "You can't divide by zero" << endl;
+					return z;
+				}
+				
 			}
 			bool chek = num_1 == num_2;
 			if (chek == 1)
